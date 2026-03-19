@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kaue Zuzza | Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header class="navbar">
+    <h1 class="logo">KZ<span>.</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#home" data-i18n="nav-home">Início</a></li>
+        <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+        <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+  <label class="theme-switch">
+    <input type="checkbox" class="theme-switch__checkbox" id="theme-toggle">
+    <div class="theme-switch__container">
+      <div class="theme-switch__clouds"></div>
+      <div class="theme-switch__stars-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+        </svg>
+      </div>
+      <div class="theme-switch__circle-container">
+        <div class="theme-switch__sun-moon-container">
+          <div class="theme-switch__moon">
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <button id="lang-toggle">EN</button>
+</div>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-container container">
+      
+      <div class="home-pic" data-aos="fade-left" data-aos-delay="200">
+        <div class="profile-pic-container" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.3">
+          <img src="./img/WhatsApp Image 2026-03-11 at 13.54.34.jpeg" alt="Kaue Zuzza" class="profile-pic"">
+          <div class="pic-shadow"></div>
+        </div>
+      </div>
+
+      <div class="home-content" data-aos="fade-right">
+        <h2 data-i18n="home-hello">Olá, eu sou</h2>
+        <h1>Kauê Zuzza</h1>
+        <h3><span id="typing-text"></span></h3>
+        <div class="buttons">
+        <svg width="0" height="0" style="position: absolute;">
+            <defs>
+            <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+                <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"></path>
+            </clipPath>
+            </defs>
+        </svg>
+
+        <div class="dock-wrapper">
+            <div class="dock-background"></div>
+            <div class="dock-container">
+            
+            <a href="https://github.com/KaueZuzza" target="_blank" class="dock-item-wrapper">
+                <div class="dock-item github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+            </a>
+
+            <a href="https://linkedin.com/in/kaue-zuzza-8b58a03b6" target="_blank" class="dock-item-wrapper">
+                <div class="dock-item linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+            </a>
+
+            <a href="https://instagram.com/zuzza.ka" target="_blank" class="dock-item-wrapper">
+                <div class="dock-item instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.981 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </div>
+            </a>
+
+            <a href="mailto:kauezuzzaw@gmail.com" target="_blank" class="dock-item-wrapper">
+                <div class="dock-item gmail">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.573l8.073-6.08c1.618-1.214 3.927-.059 3.927 1.964z"/></svg>
+                </div>
+            </a>
+
+            </div>
+        </div>
+        
+        <a href="#projects" class="btn" data-i18n="btn-projects">Ver Projetos</a>
+        <a href="#downloadCV" class="btn outline" data-i18n="btn-contact">Download CV</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container">
+      <h2 data-i18n="about-title">Sobre Mim</h2>
+      <p data-i18n="about-text">
+        Oi! Como vocês já leram, meu nome é Kaue Zuzza, atualmente tenho 21 anos, sou um desenvolvedor Full Stack e desenvolvedor de software apaixonado por transformar ideias complexas em interfaces intuitivas e sistemas robustos. Com domínio em tecnologias como Java (Spring Boot), JavaScript, HTML/CSS e Bancos de Dados, foco em entregar projetos limpos e escaláveis. Estudo Tecnologia/programação desde a minha infancia com os cursos profissionalizantes da Empresa Microlins. Atualmente, sou graduado em Investigação Forense e Perícia Criminal - Estácio e graduando em Licenciatura em Computação - UFRA, e dedico minha expertise ao desenvolvimento do FormaTec (TCC em computação), uma plataforma inteligente voltada para a gestão e capacitação educacional, onde aplico soluções de análise de dados para prevenir a evasão escolar e otimizar o aprendizado.
+      </p>
+      
+      <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-item"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 data-i18n="projects-title">Projetos</h2>
+
+    <div class="project-group">
+      <h3 class="level-title basic">🟢 <span data-i18n="level-basic">Básicos</span></h3>
+      <div class="cards" id="basic-projects">
+        <div class="card" data-aos="fade-up">
+           <div class="card-info">
+             <h4>Cronômetro JS</h4>
+             <p>Estudo de manipulação de DOM e intervalos.</p>
+             <div class="tech-badges"><span>JS</span><span>CSS</span></div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-group">
+      <h3 class="level-title advanced">🔴 <span data-i18n="level-advanced">Avançados</span></h3>
+      <div class="cards">
+        <div class="card featured" data-aos="zoom-in">
+          <div class="card-content">
+            <div class="card-header">
+              <h4>FormaTec</h4>
+              <div class="links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p data-i18n="formatec-desc">Plataforma inteligente de gestão escolar com monitoramento e prevenção de evasão.</p>
+            <div class="tech-badges">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2 data-i18n="contact-title">Vamos conversar?</h2>
+    <div class="contact-card">
+      <p><i class="fas fa-envelope"></i> kauezuzzaw@gmail.com</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
