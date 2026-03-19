@@ -116,7 +116,13 @@
     <div class="container">
       <h2 data-i18n="about-title">Sobre Mim</h2>
       <p data-i18n="about-text">
-        Oi! Como vocês já leram, meu nome é Kaue Zuzza, atualmente tenho 21 anos, sou um desenvolvedor Full Stack e desenvolvedor de software apaixonado por transformar ideias complexas em interfaces intuitivas e sistemas robustos. Com domínio em tecnologias como Java (Spring Boot), JavaScript, HTML/CSS e Bancos de Dados, foco em entregar projetos limpos e escaláveis. Estudo Tecnologia/programação desde a minha infancia com os cursos profissionalizantes da Empresa Microlins. Atualmente, sou graduado em Investigação Forense e Perícia Criminal - Estácio e graduando em Licenciatura em Computação - UFRA, e dedico minha expertise ao desenvolvimento do FormaTec (TCC em computação), uma plataforma inteligente voltada para a gestão e capacitação educacional, onde aplico soluções de análise de dados para prevenir a evasão escolar e otimizar o aprendizado.
+        Sou Kauê Zuzza, desenvolvedor Full Stack com 21 anos, apaixonado por transformar ideias complexas em soluções digitais eficientes, intuitivas e escaláveis. Atuo no desenvolvimento de sistemas utilizando tecnologias como Java (Spring Boot), JavaScript, HTML, CSS e bancos de dados relacionais, sempre priorizando código limpo, performance e boa experiência do usuário. </p><br>
+
+        Minha trajetória na tecnologia começou ainda na infância, com cursos profissionalizantes na Microlins, o que despertou meu interesse contínuo pela área e pela construção de soluções reais.</p><br>
+
+        Sou graduado em Investigação Forense e Perícia Criminal pela Estácio e atualmente graduando em Licenciatura em Computação pela Universidade Federal Rural da Amazônia (UFRA). Hoje, concentro meus esforços no desenvolvimento do FormaTec, meu Trabalho de Conclusão de Curso, uma plataforma inteligente voltada à gestão educacional e capacitação tecnológica. O projeto utiliza análise de dados para auxiliar na prevenção da evasão escolar e na otimização do processo de aprendizagem.</p><br>
+
+        Estou em constante evolução, buscando não apenas desenvolver sistemas, mas criar soluções que gerem impacto real.
       </p>
       
       <div class="skills-grid">
@@ -149,56 +155,82 @@
   </section>
 
   <section id="projects" class="projects">
-    <h2 data-i18n="projects-title">Projetos</h2>
 
-    <div class="project-group">
-      <h3 class="level-title basic">🟢 <span data-i18n="level-basic">Básicos</span></h3>
-      <div class="cards" id="basic-projects">
-        <div class="card" data-aos="fade-up">
-           <div class="card-info">
-             <h4>Cronômetro JS</h4>
-             <p>Estudo de manipulação de DOM e intervalos.</p>
-             <div class="tech-badges"><span>JS</span><span>CSS</span></div>
-           </div>
-        </div>
+  <h2>Projetos</h2>
+
+  <!-- FILTRO -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="basic">Básico</button>
+    <button class="filter-btn" data-filter="intermediate">Intermediário</button>
+    <button class="filter-btn" data-filter="advanced">Avançado</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="projects-grid">
+
+    <!-- FORMATEC (DESTAQUE) -->
+    <div class="project-card advanced featured" data-category="advanced">
+      <h3>FormaTec</h3>
+      <p>Plataforma inteligente de gestão educacional com análise de dados e prevenção de evasão.</p>
+      <span>Java • Spring • MySQL • JS</span>
+
+      <div class="project-buttons">
+        <a href="#" class="btn">Ver Demo</a>
+        <a href="#" class="btn outline">Código</a>
       </div>
     </div>
 
-    <div class="project-group">
-      <h3 class="level-title advanced">🔴 <span data-i18n="level-advanced">Avançados</span></h3>
-      <div class="cards">
-        <div class="card featured" data-aos="zoom-in">
-          <div class="card-content">
-            <div class="card-header">
-              <h4>FormaTec</h4>
-              <div class="links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <p data-i18n="formatec-desc">Plataforma inteligente de gestão escolar com monitoramento e prevenção de evasão.</p>
-            <div class="tech-badges">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>MySQL</span>
-              <span>React</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- EXEMPLO -->
+    <div class="project-card basic" data-category="basic">
+      <h3>Calculadora Web</h3>
+      <p>Aplicação simples com operações matemáticas.</p>
+      <span>HTML • CSS • JS</span>
     </div>
-  </section>
+
+    <div class="project-card intermediate" data-category="intermediate">
+      <h3>Sistema CRUD</h3>
+      <p>Cadastro completo com backend em Java.</p>
+      <span>Java • MySQL</span>
+    </div>
+
+  </div>
+</section>
 
   <section id="contact" class="contact" data-aos="fade-up">
-    <h2 data-i18n="contact-title">Vamos conversar?</h2>
-    <div class="contact-card">
-      <p><i class="fas fa-envelope"></i> kauezuzzaw@gmail.com</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
+
+  <h2 data-i18n="contact-title">Vamos conversar?</h2>
+
+  <p class="contact-subtitle">
+    Estou aberto a oportunidades, projetos e conexões.
+  </p>
+
+  <div class="contact-card">
+
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>kauezuzzaw@gmail.com</span>
     </div>
-  </section>
+
+    <div class="social-links">
+
+      <a href="https://linkedin.com/in/kaue-zuzza-8b58a03b6" target="_blank" class="social-btn linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/KaueZuzza" target="_blank" class="social-btn github">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="mailto:kauezuzzaw@gmail.com" class="social-btn gmail">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
