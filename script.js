@@ -69,23 +69,28 @@ document.addEventListener("DOMContentLoaded", () => {
       el.innerText = translations[currentLang][key];
     });
   });
-
-  // --- LÓGICA DO NOVO DARK/LIGHT MODE ---
-  const themeBtn = document.getElementById("theme-toggle");
   
-  // Verifica se o usuário já tinha uma preferência salva (opcional, mas bom)
-  themeBtn.addEventListener("change", () => {
-    if (themeBtn.checked) {
-      // O Toggle do Uiverse "checked" visualmente parece NOITE
-      // Mas a sua classe CSS "light" inverte as cores. 
-      // Então, se o checkbox NÃO estiver marcado = Sol (Light Mode)
-      // Se estiver MARCADO = Lua (Dark Mode)
-      document.body.classList.remove("light");
-    } else {
-      document.body.classList.add("light");
-    }
-  });
+  const themeBtn = document.getElementById("theme-toggle");
 
+// Estado inicial (garante consistência)
+if (themeBtn.checked) {
+  document.body.classList.remove("light"); // dark
+} else {
+  document.body.classList.add("light"); // light
+}
+
+// Evento de mudança
+themeBtn.addEventListener("change", () => {
+  if (themeBtn.checked) {
+    // DARK MODE
+    document.body.classList.remove("light");
+    localStorage.setItem("theme", "dark");
+  } else {
+    // LIGHT MODE
+    document.body.classList.add("light");
+    localStorage.setItem("theme", "light");
+  }
+});
   // --- INICIALIZAÇÕES ---
   type();
   AOS.init({ duration: 1000, once: true });
