@@ -307,7 +307,7 @@ body {
 }
 
 .home h1 { font-size: 4rem; margin-bottom: 0.5rem; }
-.home h3 { min-height: 1.5em; color: var(--primary); font-weight: 400; }
+.home h2 {  color: var(--primary); font-weight: 700;}
 
 .buttons { margin-top: 2rem; display: flex; gap: 15px; justify-content: center; flex-direction: column; width: 250px;}
 
